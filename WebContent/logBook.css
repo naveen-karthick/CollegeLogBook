@@ -1,0 +1,158 @@
+@charset "ISO-8859-1";
+
+body {
+    background: url('msec.jpg');
+    background-size: cover;
+}
+
+.main-container {
+    height: 650px;
+    width: 85%;
+    margin: 0px auto;
+    margin-top: 40px;
+}
+
+.left-side {
+    color: white;
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-color: #D24D57;
+}
+
+.left-side h1,h2,p {
+    text-align: center;
+}
+
+.left-side  p {
+    margin-top: 6%;
+    font-size: 20px;
+    font-weight: bold;
+}
+.zilker-img {
+    width: 30%;
+    height: 30%;
+    margin-left: 35%;
+    margin-top: 2%;
+}
+
+.social-media {
+    width: 50%;
+    margin-left: 23%;
+    margin-top: 2%;
+}
+
+.right-side {
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.6)),url('right-background.jpg');
+}
+
+::-webkit-input-placeholder {
+    color: #95a5a6;
+}
+
+.form {
+    margin-top: 30%;
+    margin-left: 10%;
+}
+
+
+.form {
+    color: white;
+}
+
+.form h1 {
+    text-align: center;
+}
+
+input {
+    margin-bottom: 20px;
+}
+
+.login-credentials {
+    width: 40%;
+    height: 28px;
+    border: 1px solid #ccc;
+    font-size: 20px;
+    background-color: #3CBC8D;
+    color: white;
+    background: transparent;
+    border-radius: 4px;
+}
+
+.form label {
+    float: left;
+    width: 7em;
+    margin-right: 1em;
+    margin-left: 2%; 
+    font-size: 22px;  
+}
+
+
+input[type="submit"] {
+    background-color: #D24D57;
+    height: 40px;
+    width: 100px;
+    border:3px solid grey;
+    border-radius: 20px;
+    margin-left: 40%;
+    color: white;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 1100px ) {
+    .form label {
+        font-size: 18px;
+    }
+
+    
+    .form {
+        margin-left: 5%;
+    }
+
+    ::-webkit-input-placeholder {
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (max-width: 850px ) {
+    .form label {
+        font-size: 15px;
+    }
+
+    .form {
+        margin-left: 5%;
+    }
+
+    ::-webkit-input-placeholder {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .left-side {
+        width: 100%;
+    }
+
+    .right-side {
+        width: 100%;    
+    }
+
+    .form label {
+        font-size: 25px;
+        margin-bottom: 10px;
+        margin-right: 10em;
+    }
+    
+    .login-credentials {
+    	width: 90%;
+    }
+
+    ::-webkit-input-placeholder {
+        font-size: 12px;
+    }
+}

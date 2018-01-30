@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="college_log_book _maintainer">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <property name="context-root" value="college_log_book__maintainer"/>
+        <property name="java-output-path" value="/college_log_book _maintainer/bin"/>
+    </wb-module>
+</project-modules>

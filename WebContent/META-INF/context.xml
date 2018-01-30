@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Context path="/myApp" docBase="myApp"
+   crossContext="true" reloadable="true" debug="1">
+   
+    <Resource name="jdbc/worldDB" auth="Container" type="javax.sql.DataSource"
+    	maxActive="10" maxIdle="30" maxWait="10000"
+    	username="root" password="ztech@123" driverClassName="com.mysql.jdbc.Driver"
+    	url="jdbc:mysql://localhost:3306/college_logbook"/>
+</Context>
