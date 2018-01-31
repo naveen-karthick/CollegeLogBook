@@ -9,11 +9,11 @@ import com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationExceptio
 
 import io.zilker.bean.ReportDetails;
 import io.zilker.utility.Constants;
-import io.zilker.utility.GetConnection;
+import io.zilker.utility.DbConnection;
 
 public class UpdateDetails {
 	Connection con = null;
-	GetConnection connection;
+	DbConnection connection;
 	Logger log=Logger.getLogger(UpdateDetails.class.getName());
 
 	
@@ -29,7 +29,7 @@ public class UpdateDetails {
 		
 		
 		try {
-			connection = new GetConnection();
+			connection = new DbConnection();
 			connection.createconnection();
 			con = connection.getConnection();
 		 statement = con.prepareStatement(Constants.HODREPORT);
@@ -59,7 +59,7 @@ public class UpdateDetails {
 		
 		
 		try {
-			connection = new GetConnection();
+			connection = new DbConnection();
 			connection.createconnection();
 			con = connection.getConnection();
 			statement = con.prepareStatement(Constants.EDITPERSONALREPORT);
@@ -90,7 +90,7 @@ public class UpdateDetails {
 		
 		
 		try {
-			connection = new GetConnection();
+			connection = new DbConnection();
 			connection.createconnection();
 			con = connection.getConnection();
 			statement = con.prepareStatement(Constants.DELETEPERSONALREPORT);
@@ -120,7 +120,7 @@ public class UpdateDetails {
 		
 		try {
 			System.out.println(report.getWorkDone());
-			connection = new GetConnection();
+			connection = new DbConnection();
 			connection.createconnection();
 			con = connection.getConnection();
 			statement = con.prepareStatement(Constants.SUBMITREPORT);

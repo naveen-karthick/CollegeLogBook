@@ -4,7 +4,7 @@
     <welcome-file>login.jsp</welcome-file>
   </welcome-file-list>
   <context-param>
-        <param-name>javax.servlet.jsp.jstl.fmt.localizationContext</param-name>
-        <param-value>com.projectName.resources.ApplicationResource</param-value>
-</context-param>  
+    <param-name>javax.servlet.jsp.jstl.fmt.localizationContext</param-name>
+    <param-value>com.projectName.resources.ApplicationResource</param-value>
+  </context-param>
 </web-app>

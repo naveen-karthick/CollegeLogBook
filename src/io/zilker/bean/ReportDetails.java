@@ -5,6 +5,13 @@ public class ReportDetails {
 		private int hourOfClass;
 		private String updatedOn;
 		private int yearOfDepartment;
+		private int dayOfWeek;
+		public int getDayOfWeek() {
+			return dayOfWeek;
+		}
+		public void setDayOfWeek(int dayOfWeek) {
+			this.dayOfWeek = dayOfWeek;
+		}
 		private int department;
 		private String departmentName;
 		private String workDone;

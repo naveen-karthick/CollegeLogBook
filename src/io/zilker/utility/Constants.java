@@ -13,6 +13,7 @@ public static final String FETCHDEPARTMENT="select dept_name from departments wh
 public static final String FETCHDEPTREPORT="SELECT status_report,updated_on from hod_report where dept_id=? and date_on=? and year_1=?";
 public static final String FETCHPERSONALREPORT= "SELECT staff_report.hour_on,staff_report.work_done,staff_report.updated_on,staff_report.year_1,departments.dept_name FROM staff_report join departments on departments.dept_id=staff_report.dept_id  where staff_id=? and date_on=? ";
 public static final String DELETEPERSONALREPORT="DELETE FROM `college_logbook`.`staff_report` WHERE `date_on`=? and`hour_on`=? and `staff_id`=?";
-public static final String EDITPERSONALREPORT="UPDATE `college_logbook`.`staff_report` SET `hour_on`=?, `work_done`=?,`updated_on`=? , `year_1`=?, `dept_id`=? WHERE `date_on`=? and`hour_on`=? and `staff_id`=?";	
+public static final String EDITPERSONALREPORT="UPDATE `college_logbook`.`staff_report` SET `hour_on`=?, `work_done`=?,`updated_on`=? , `year_1`=?, `dept_id`=? WHERE `date_on`=? and`hour_on`=? and `staff_id`=?";
+public static final String FETCHSTAFFINCHARGE ="SELECT distinct timetable_class.staff_id , staff_details.staff_name from timetable_class join timetable join staff_details  on timetable.timetable_id=timetable_class.timetable_id and staff_details.staff_id=timetable_class.staff_id where timetable.day_of_week=? and timetable.dept_id =? and timetable.year_1 =? and timetable_class.hour_1=?"; 
 	
 }

@@ -9,7 +9,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="stylesheet" type="text/Css" href="logBook.css">
+<link rel="stylesheet" type="text/Css" href="cs/logBook.css">
 <%if(request.getSession().getAttribute("staff")!=null) { 
 	response.sendRedirect("log");
 	} %>
@@ -19,10 +19,10 @@
     <div class="left-side">
         <h1>MSEC</h1>
         <h2><em> - 363, Arcot Road, Kodambakkam, Chennai - 24</em></h2>
-        <img class="zilker-img" src="msec.png">
+        <img class="zilker-img" src="images/msec.png">
         <p><em>To impart state-of- the art technical education, inculcating sterling values and shining character, producing engineers who contribute to nation building
              thereby achieving our ultimate objective of sustained development of an unparalleled society, nation and world at large.</em></p>
-        <img class="social-media" src="social_media.png">     
+        <img class="social-media" src="images/social_media.png">     
     </div>
     <div class="right-side">
         <div class="form">    
@@ -41,6 +41,6 @@
 
 
 
-<script src="log.js"></script>
+<script src="js/log.js"></script>
 </body>
 </html>

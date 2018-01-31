@@ -8,7 +8,7 @@ import java.util.regex.Pattern;
 
 import io.zilker.bean.LoginDetails;
 import io.zilker.utility.Constants;
-import io.zilker.utility.GetConnection;
+import io.zilker.utility.DbConnection;
 
 public class ValidationOfCredentials {
 	
@@ -30,7 +30,7 @@ public class ValidationOfCredentials {
 	}
 	public int verifyLoginCredentials(LoginDetails user)
 	{
-		GetConnection connection=new GetConnection();
+		DbConnection connection=new DbConnection();
 		//create connection
 		connection.createconnection();
 		
